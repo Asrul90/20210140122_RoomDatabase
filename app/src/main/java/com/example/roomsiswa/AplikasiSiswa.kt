@@ -6,5 +6,10 @@ import com.example.roomsiswa.repositori.ContainerApp
 class AplikasiSiswa : Application() {
     lateinit var container: ContainerApp
 
+    override fun onCreate() {
+        super.onCreate()
+        container = ContainerApp(this)
+    }
+
 
 }
