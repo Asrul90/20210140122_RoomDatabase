@@ -85,7 +85,22 @@ fun EntrySiswaBody(
         verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_large)),
         modifier = Modifier.padding(dimensionResource(id = R.dimen.padding_medium))
         
-    ){}
+    ){
+        FormInputsiswa(
+            detailSiswa = uiStateSiswa.DetailSiswa,
+            onSiswaValueChange = onSiswaValueChange,
+            modifier = Modifier.fillMaxWidth()
+        )
+    }
+}
+
+@Composable
+fun FormInputsiswa(
+    detailSiswa: DetailSiswa,
+    onSiswaValueChange: KFunction1<DetailSiswa, Unit>,
+    modifier: Modifier,
+) {
+    TODO("Not yet implemented")
 }
 
 
