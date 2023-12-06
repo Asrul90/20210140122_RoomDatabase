@@ -1,5 +1,7 @@
 package com.example.roomsiswa.ui.halaman
 
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.rememberScrollState
@@ -12,6 +14,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.input.nestedscroll.nestedScroll
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.lifecycle.viewmodel.compose.viewModel
 
@@ -78,7 +81,11 @@ fun EntrySiswaBody(
     onSaveClick: () -> Unit,
     modifier: Modifier,
 ) {
-    TODO("Not yet implemented")
+    Column (
+        verticalArrangement = Arrangement.spacedBy(dimensionResource(id = R.dimen.padding_large)),
+        modifier = Modifier.padding(dimensionResource(id = R.dimen.padding_medium))
+        
+    ){}
 }
 
 
